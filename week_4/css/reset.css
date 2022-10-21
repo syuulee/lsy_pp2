@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+  /* 폰트 준 게 이상하게 꼬이기 때문에(원래의 라인하이트 1.2가 있음) */
+}
+
+img {
+  /* max-width: 100%;
+  반응형 할 때 많이 쓰는 맥스와이드 100% */
+  vertical-align: middle;
+  max-width: 100%;
+}
