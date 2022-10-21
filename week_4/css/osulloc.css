@@ -422,7 +422,7 @@ a {
     text-shadow: 0 0 3px #333;
 }
 
-.hover_challenge h2 .hover_challenge {
+.hover_challenge {
     padding: 100px 0;
 }
 
@@ -564,10 +564,10 @@ a {
 .hover .title strong::after {
     content: "";
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
     width: 330px;
     height: 1px;
-    background: #fff;
+    background: #ddd;
 }
 
 .hover .detail_desc .monthly {
