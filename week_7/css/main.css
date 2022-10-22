@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 * {
-    outline: 1px solid --skyblue;
+    outline: 1px solid -- skyblue;
 }
 
 .container {
@@ -248,7 +248,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 20px 0 0;
 }
 
@@ -258,7 +258,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 0 0 20px;
 }
 
@@ -431,7 +431,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 20px 0 0;
 }
 
@@ -441,7 +441,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 0 0 20px;
 }
 
@@ -456,12 +456,12 @@
 
 .tab_menu>ul {
     margin: 40px 0 0 0;
-    border-top: 1px solid #333;
+    border-top: 1px solid #ddd;
 }
 
 .tab_menu>li {
     height: auto;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ddd;
 }
 
 .tab_menu>li .dining_card {
@@ -525,7 +525,6 @@
 
 .tab_content>li {
     display: none;
-    padding: 10px;
 }
 
 .tab_content figure {
@@ -573,7 +572,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 20px 0 0;
 }
 
@@ -583,7 +582,7 @@
     flex: 1;
     width: 30px;
     height: 1px;
-    background: #333;
+    background: #ddd;
     margin: 0 0 0 20px;
 }
 
