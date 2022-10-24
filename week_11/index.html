@@ -59,9 +59,7 @@
                     </ul>
                 </nav>
                 <div class="icon">
-                    <a href="">
-                        <i class="xi-bars"></i>
-                    </a>
+                    <i class="xi-bars"></i>
                 </div>
             </div>
             <!-- 2022.08.30 이거 해결 꼭 할 것;;;그냥 총체적난국;; -->
@@ -94,11 +92,6 @@
                             <li><a href="">제작발표회</a></li>
                         </ul>
                     </nav>
-                    <div class="btn">
-                        <a href="">
-                            <i class="xi-close"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="logo_under">
                     <figure>
@@ -568,8 +561,7 @@
                         <div class="itm01 itm">
                             <h2>현장포토</h2>
                             <a href="">
-                                빅마우스 찾으러 가기
-                                <i class="xi-angle-right-thin"></i>
+                                <p>빅마우스 찾으러 가기 <i class="xi-angle-right-thin"></i></p>
                             </a>
                         </div>
                         <div class="itm02 itm">
@@ -759,7 +751,6 @@
     <script>
         window.addEventListener('DOMContentLoaded', () => {
 
-
             var swiper = new Swiper(".mySwiper", {
                 loop: true,
                 // direction: "vertical",
@@ -789,10 +780,15 @@
                 },
             });
 
-            document.querySelector('.icon i').addEventListener('click', function () {
-                console.log(000)
+            document.querySelector('.icon').addEventListener('click', () => {
                 document.querySelector('.total_menu').classList.toggle('on');
             });
+
+
+            document.querySelector('.more').addEventListener('click', () => {
+                document.querySelector('.detail_infor').classList.toggle('on');
+            });
+
 
         })
 
