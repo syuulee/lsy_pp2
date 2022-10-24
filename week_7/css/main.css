@@ -126,7 +126,7 @@
     border: 1px solid #000;
 }
 
-.gnb>ul>li .smenu {
+.gnb .smenu {
     position: absolute;
     top: 90px;
     left: 50%;
@@ -739,13 +739,17 @@
     .header_gnb {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         padding: 10px 15px;
         width: 100%;
         height: 100vh;
         min-width: 300px;
         background: #fff;
-        transition: top 0.2s ease-in-out;
+        transition: top 0.5s ease-in-out;
+    }
+
+    .header_gnb.on {
+        left: 0;
     }
 
     .header_gnb.fixed {
@@ -789,13 +793,6 @@
         gap: 10px;
     }
 
-    .gnb .mopen {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 15px;
-    }
-
     .header_gnb.fixed {
         position: fixed;
         left: 0;
@@ -808,20 +805,11 @@
     }
 
     .header_gnb.fixed .gnb>ul>li>a:hover {
-        border-bottom: 1px solid #000;
+        border-bottom: none;
     }
 
     .header_gnb.fixed .gnb>ul::after {
-        content: "";
-        position: absolute;
         display: none;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: linear-gradient(to top, transparent, #fff);
-        transition: 0.5s;
-        z-index: 998;
     }
 
     .header_gnb.fixed .gnb>ul:hover::after {
@@ -839,26 +827,30 @@
         border: 1px solid #000;
     }
 
-    .gnb>ul>li .smenu {
-        position: absolute;
+    .gnb .smenu {
+        position: static;
         top: 90px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 180px;
+        left: 0;
+        width: 100%;
+        height: auto;
         text-align: center;
         line-height: 30px;
-        opacity: 0;
-        visibility: hidden;
-        color: #fff;
-        z-index: 999;
-        height: 300px;
+        color: #333;
+        z-index: 1000;
     }
 
     .gnb>ul>li:hover .smenu {
-        top: 82px;
+        top: 50px;
         opacity: 1;
         visibility: visible;
-        transition: 0.5s;
+        transition: none;
+    }
+
+    .gnb .mopen {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
     }
 
     .main_visual {
