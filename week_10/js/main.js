@@ -25,10 +25,16 @@ window.addEventListener('DOMContentLoaded', () => {
             el: ".swiper-pagination",
             clickable: true,
         },
-        // navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev",
-        // },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            790: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        }
     });
 
     // 슬라이드 버튼
@@ -68,6 +74,12 @@ window.addEventListener('DOMContentLoaded', () => {
         it.classList.toggle('on')
     }))
 
+
+    document.querySelector('.mopen').addEventListener('click', () => {
+        // const TG = e.currentTarget;
+        // TG.classList.toggle('on');
+        document.querySelector('.header').classList.toggle('no');
+    })
 
 
 
