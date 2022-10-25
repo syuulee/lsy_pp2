@@ -259,6 +259,23 @@
     align-items: center;
 }
 
+.main_slide .itm .cart {
+    position: absolute;
+    top: 0;
+    right: -200%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    transition: 0.7s;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main_slide .itm .cart .emphasis {
     display: inline-block;
     font-size: 17px;
@@ -349,7 +366,6 @@
 
 .main_salt .event_product {
     display: flex;
-    flex-direction: column;
     flex: 1;
     gap: 79px;
     text-align: center;
@@ -405,6 +421,10 @@
     text-transform: uppercase;
 }
 
+.more {
+    display: none;
+}
+
 .list {
     width: 100%;
     display: flex;
@@ -451,10 +471,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 6px;
-}
-
-.item:hover .map {
-    top: 0;
 }
 
 .map>strong {
@@ -1069,7 +1085,6 @@
         font-weight: 500;
         margin: 0 0 15px 0;
     }
-
 
     .map>p {
         font-size: 15px;
