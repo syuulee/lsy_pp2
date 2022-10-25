@@ -14,6 +14,7 @@ $(function () {
     $(window).on('resize', function () {
         $('.header_gnb').removeClass('on');
         $('.smenu').removeAttr('style');
+        $('.')
     });
 
     var contentSlider01 = $('.content-slider').slick({
@@ -72,6 +73,14 @@ $(function () {
         //useCSS:false,
         vertical: true,
         speed: 900,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
         //easing:"easeOutBounce",
         //https://api.jqueryui.com/easings/
         //dots:true,
@@ -79,7 +88,7 @@ $(function () {
         //nextArrow:"<i class='xi-angle-right-thin'></i>",
     });
 });
-$(window).on('resize', function () {
-    $('gnb').removeClass('on');
-    $('.smenu').removeAfter('style');
-});
+// $(window).on('resize', function () {
+//     $('gnb').removeClass('on');
+//     $('.smenu').removeAfter('style');
+// });
