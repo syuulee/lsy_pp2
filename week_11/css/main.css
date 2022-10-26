@@ -347,7 +347,8 @@ body {
     gap: 40px;
 }
 
-.here {
+.here,
+.fami {
     height: 533px;
 }
 
