@@ -77,7 +77,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.mopen').addEventListener('click', () => {
         // const TG = e.currentTarget;
-        // TG.classList.toggle('on');
+        // TG.classList.toggle('no');
+        document.querySelector('.mopen').classList.toggle('no');
         document.querySelector('.header').classList.toggle('no');
     })
 

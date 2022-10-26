@@ -589,7 +589,7 @@
 /* 반응형 */
 @media (max-width:768px) {
     * {
-        outline: 1px solid yellowgreen;
+
         font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     }
 
@@ -639,7 +639,7 @@
         position: fixed;
         top: 20px;
         left: 20px;
-        width: 200px;
+        width: 150px;
         text-align: center;
     }
 
@@ -1179,5 +1179,67 @@
             transform: translate(0, 0);
             opacity: 0;
         }
+    }
+
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+        font-size: 0;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border-radius: 3px;
+    }
+
+    .mopen button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mopen::before,
+    .mopen::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        height: 2px;
+        background: #0d6efd;
+    }
+
+    .mopen button::before,
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        top: calc(50% - 1px);
+
+        height: 2px;
+        background: #0d6efd;
+    }
+
+    .mopen.no button::before {
+        transform: rotate(45deg);
+    }
+
+    .mopen.no button::after {
+        transform: rotate(-45deg);
+    }
+
+    .mopen.no::before,
+    .mopen.no::after {
+        opacity: 0;
+    }
+
+    .mopen::before {
+        top: 7px;
+    }
+
+    .mopen::after {
+        bottom: 7px;
     }
 }
