@@ -641,6 +641,7 @@
         left: 20px;
         width: 150px;
         text-align: center;
+        z-index: 999;
     }
 
     .header .gnb>ul {
