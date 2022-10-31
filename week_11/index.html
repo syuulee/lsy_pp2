@@ -92,6 +92,9 @@
                             <li><a href="">제작발표회</a></li>
                         </ul>
                     </nav>
+                    <div class="icon close">
+                        <i class="xi-close"></i>
+                    </div>
                 </div>
                 <div class="logo_under">
                     <figure>
@@ -783,7 +786,9 @@
             document.querySelector('.icon').addEventListener('click', () => {
                 document.querySelector('.total_menu').classList.toggle('on');
             });
-
+            document.querySelector('.close').addEventListener('click', () => {
+                document.querySelector('.total_menu').classList.toggle('on');
+            });
 
             document.querySelector('.more').addEventListener('click', () => {
                 document.querySelector('.detail_infor').classList.toggle('on');

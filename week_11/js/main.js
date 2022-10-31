@@ -9,9 +9,9 @@ $(function () {
         // $(this).parent().addClass('on');
     });
 
-    $('.icon').on('click', function () {
-        $(this).toggleClass('on');
-        $('.total_menu').addClass('on');
-    })
+    // $('.icon').on('click', function () {
+    //     $(this).toggleClass('on');
+    //     $('.total_menu').addClass('on');
+    // })
 
 });
