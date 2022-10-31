@@ -9,12 +9,13 @@ $(function () {
 
     $('.mopen').on('click', function () {
         $('.header_gnb').toggleClass('on');
+        $('.mopen').toggleClass('ox')
     });
+
 
     $(window).on('resize', function () {
         $('.header_gnb').removeClass('on');
         $('.smenu').removeAttr('style');
-        $('.')
     });
 
     var contentSlider01 = $('.content-slider').slick({
