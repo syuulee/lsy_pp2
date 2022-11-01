@@ -87,7 +87,7 @@ body {
 
 .header .total_menu .container {
     display: flex;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #ddd;
 }
 
 .header .total_menu {
@@ -97,7 +97,7 @@ body {
     gap: 50px;
     transform: translateX(-50%);
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: #000000;
     z-index: 999;
     transition: 0.8s;
@@ -105,6 +105,15 @@ body {
 
 .header .total_menu.on {
     top: 0;
+    transition: 0.8s;
+}
+
+.header .close {
+    position: absolute;
+    top: 15px;
+    right: 50%;
+    transform: translateX(-50%);
+    margin: 0 -650px 0 0;
 }
 
 .btn {
@@ -144,18 +153,15 @@ body {
 }
 
 .header .sub_smenu {
-    font-size: 17px;
+    font-size: 15px;
+    line-height: 1.5;
     font-weight: 300;
+    text-align: center;
 }
 
 .header .sub_menu>li>a {
     display: inline-block;
-    margin: 0 0 30px 0;
-}
-
-.header .sub_smenu>li>a {
-    display: inline-block;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .plan {
@@ -211,7 +217,6 @@ body {
     padding: 50px;
     background: #000000;
     border: 1px solid #f1f1f1;
-
 }
 
 .plan .detail_infor .got {
@@ -252,6 +257,7 @@ body {
 @keyframes horizontal {
     0% {
         margin-left: 9px;
+        opacity: 1;
     }
 
     50% {
@@ -585,6 +591,7 @@ body {
 }
 
 .movie_slide {
+    position: relative;
     padding: 100px 0;
 }
 
@@ -623,8 +630,23 @@ body {
     padding: 0 0 20px 0;
 }
 
-.swiper-pagination {
-    display: none;
+.movie_slide .slide_handler>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #637f67;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.movie_slide .slide_handler .next {
+    margin: 0 0 0 -700px;
+}
+
+.movie_slide .slide_handler .prev {
+    margin: 0 0 0 700px;
 }
 
 .swiper-button-next {
@@ -645,7 +667,6 @@ body {
 }
 
 .footer {
-    line-height: 100px;
     background: #f1f1f1;
     color: #444;
     padding: 0 0 100px 0;
@@ -654,7 +675,7 @@ body {
 .footer .container .footer_top {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 30px 0;
+    line-height: 80px;
 }
 
 .footer .container .footer_top>li {

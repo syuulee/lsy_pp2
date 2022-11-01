@@ -62,7 +62,7 @@
                     <i class="xi-bars"></i>
                 </div>
             </div>
-            <!-- 2022.08.30 이거 해결 꼭 할 것;;;그냥 총체적난국;; -->
+            <!-- 2022.08.30 이거 해결 꼭 할 것;;;2022.10.31. 해결 -->
             <div class="total_menu">
                 <div class="container">
                     <nav class="sub_gnb">
@@ -629,6 +629,10 @@
             <section class="movie_slide">
                 <div class="container">
                     <h2>메이킹</h2>
+                    <div class="slide_handler">
+                        <div class="next"><i class="xi-angle-left"></i></div>
+                        <div class="prev"><i class="xi-angle-right"></i></div>
+                    </div>
                     <div class="movie_sld swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide box">
@@ -686,18 +690,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next">
-                            <i class="xi-full-moon"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="xi-full-moon"></i>
-                        </div>
-                        <div class="swiper-pagination"></div>
+
                     </div>
                 </div>
-
             </section>
         </main>
+
         <footer class="footer">
             <div class="container">
                 <ul class="footer_top">
@@ -749,8 +747,6 @@
 
 
 
-
-
     <script>
         window.addEventListener('DOMContentLoaded', () => {
 
@@ -767,7 +763,7 @@
                 },
             });
 
-            var swiper = new Swiper(".movie_sld", {
+            var VIDEO = new Swiper(".movie_sld", {
                 slidesPerView: 3,
                 spaceBetween: 30,
                 slidesPerGroup: 3,
@@ -794,6 +790,12 @@
                 document.querySelector('.detail_infor').classList.toggle('on');
             });
 
+            document.querySelector('.movie_slide .slide_handler .next').addEventListener('click', () => {
+                VIDEO.slideNext();
+            });
+            document.querySelector('.movie_slide .slide_handler .prev').addEventListener('click', () => {
+                VIDEO.slidePrev();
+            });
 
         })
 
