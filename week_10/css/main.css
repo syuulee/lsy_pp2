@@ -44,6 +44,10 @@
     text-align: center;
 }
 
+.header.on h1 {
+    display: block;
+}
+
 .header .gnb>ul {
     display: flex;
     gap: 30px;
@@ -961,6 +965,7 @@
 
     .main_salt .event_product {
         display: flex;
+        flex-direction: column;
         flex: 1;
         gap: 30px;
         text-align: center;
